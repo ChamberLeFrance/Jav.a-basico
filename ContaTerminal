@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+//C.H.A.M.B.E.R
+public class ContaTerminal {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Bem-vindo a CHAMBER");
+        System.out.println("[Digite o numero da conta]: ");
+            double NumDCont = scanner.nextDouble();
+            System.out.println("Ok, o numero da sua conta é: " + NumDCont);
+
+        System.out.println("[Digite o Nome]: ");
+            String NameClient= scanner.next();
+            System.out.println("acho que te conheço...");
+
+        System.out.println("[Sobrenome]: ");
+            String SubName= scanner.next();
+            System.out.println("ah! lembro perfeitamente de você! Sr." + SubName);
+        
+        System.out.println("[Digite o Nome da Agência]:");
+            String NameAgency = scanner.next();
+
+        System.out.println("[Depositar saldo da sua conta]");
+            Double Saldo = scanner.nextDouble();
+            System.out.println("ok! o dinheiro que você depositou na conta foi: "+ Saldo);
+
+        System.out.println("[FINALIZADO]");
+
+        System.out.println("Olá "+ NameClient +"  "+ SubName + " aqui é a agência da " + NameAgency + " e viemos avisar que foi depositado "+ Saldo + " na sua conta! um otimo dia![mensagem by ["+NameAgency+"]");
+
+    scanner.close();
+    }
+}
